@@ -1,0 +1,26 @@
+<!DOCTYPE> {% load staticfiles %}
+
+<html>
+
+<head>
+    <title>This is an example</title>
+</head>
+
+<body>
+    <h1>Hello World!!!</h1>
+    <div>
+        Hola<br />
+        <strong>{{ boldmsg }}</strong><br />
+    </div>
+    <div>
+        <a href="/rango/">Index</a><br />
+        <img src="{% static 'images/helloworld.jpg' %}" alt="Hello World" />
+        <!-- New line -->
+    </div>
+    <div>
+        <h3>{{ gjmsg }}</h3>
+
+    </div>
+</body>
+
+</html>

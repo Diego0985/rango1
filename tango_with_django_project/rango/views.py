@@ -16,3 +16,8 @@ def index(request):
 
 def about(request):
     return HttpResponse('Rango says here is the about page')
+
+def ejemplo(request):
+    context_dict = {'boldmsg' : "You know what is it", 'gjmsg' : "Goood Job!"}
+
+    return render(request, '../templates/rango/ejemplo.html', context=context_dict)
